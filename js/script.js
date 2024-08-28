@@ -1,40 +1,45 @@
 //Creo un array di object
 
-const team = [
+const members = [
     {
-        firstName: 'Wayne',
-        lastName: 'Barnett',
+        name: 'Wayne Barnett',
         role: 'Founder & CEO',
         photo: 'wayne-barnett-founder-ceo.jpg'
     },
     {
-        firstName: 'Angela',
-        lastName: 'Carrol',
+        name: 'Angela Carrol',
         role: 'Chied Editor',
         photo: 'angela-caroll-chief-editor.jpg'
     },
     {
-        firstName: 'Walter',
-        lastName: 'Gordon',
+        name: 'Walter Gordon',
         role: 'Office Manager',
         photo: 'walter-gordon-office-manager.jpg'
     },
     {
-        firstName: 'Angela',
-        lastName: 'Lopez',
+        name: 'Angela Lopez',
         role: 'Social Media Manager',
         photo: 'angela-lopez-social-media-manager.jpg'
     },
     {
-        firstName: 'Scott',
-        lastName: 'Estrada',
+        name: 'Scott Estrada',
         role: 'Developer',
         photo: 'scott-estrada-developer.jpg'
     },
     {
-        firstName: 'Barbara',
-        lastName: 'Ramos',
+        fname: 'Barbara Ramos',
         role: 'Graphic Designer',
         photo: 'barbara-ramos-graphic-designer.jpg '
     }
 ]
+
+//Stampo in console le informazioni
+
+for(let member of members){
+    for(let key in member){
+        console.log(member[key]);
+    }
+}
+
+
+
