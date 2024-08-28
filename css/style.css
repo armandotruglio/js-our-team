@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-align: center;
 }
 
 /* Utils */
@@ -16,12 +17,16 @@
 /* Generics */
 
 h1, p{
-    text-align: center;
-    margin: 1rem;
+    margin-bottom: 1rem;
 }
 
 header{
     margin-bottom: 2rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 /* Main */
@@ -30,10 +35,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 5rem;
 }
 
 .col{
     flex-basis: calc(100%/3 - (40px/3));
-    height: 50px;
-    border: 1px dashed red;
+}
+
+.card{
+    background-color:cornsilk
 }
