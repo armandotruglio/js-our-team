@@ -1,0 +1,39 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Utils */
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Generics */
+
+h1, p{
+    text-align: center;
+    margin: 1rem;
+}
+
+header{
+    margin-bottom: 2rem;
+}
+
+/* Main */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col{
+    flex-basis: calc(100%/3 - (40px/3));
+    height: 50px;
+    border: 1px dashed red;
+}
